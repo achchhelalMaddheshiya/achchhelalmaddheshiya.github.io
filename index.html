@@ -30,4 +30,118 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <h1>Hi, I'm <span class="name">Achchhelal Maddheshiya</span></h1>
-          <p cla
+          <p class="tagline">Full Stack Developer • PHP / Laravel / React / Next.js • PostgreSQL / MySQL • Web3 & REST APIs</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn outline" href="resume.pdf" target="_blank">Download CV</a>
+          </div>
+
+          <ul class="badges">
+            <li>5+ years experience</li>
+            <li>API & Microservices</li>
+            <li>Blockchain / Web3</li>
+            <li>Database Design</li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <img src="img/profile.jpg" alt="Achchhelal Maddheshiya" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <p>
+        I completed my <strong>B.Tech (CSE)</strong> from <strong>Lucknow</strong> at
+        <a href="https://bncet.ac.in" target="_blank" rel="noopener">B N College of Engineering & Technology</a>.
+        I'm passionate about building efficient, scalable web applications. I specialize in backend systems (PHP, Laravel, CodeIgniter),
+        modern frontends (React, Next.js), and database-driven applications (PostgreSQL, MySQL). I also integrate blockchain/Web3 solutions and RESTful APIs.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2>Technologies I Work With</h2>
+      <div class="skill-grid">
+        <div class="skill">PHP</div>
+        <div class="skill">Laravel</div>
+        <div class="skill">CodeIgniter</div>
+        <div class="skill">React</div>
+        <div class="skill">Next.js</div>
+        <div class="skill">JavaScript / ES6+</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">RESTful APIs</div>
+        <div class="skill">GraphQL</div>
+        <div class="skill">Web3 / Solidity</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Redis</div>
+        <div class="skill">Unit Testing</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Laravel API Platform</h3>
+          <p>Role-based API with queued jobs, Redis caching, webhook integration and robust tests.</p>
+          <a class="link" href="#" target="_blank">View Repo →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Next.js E-commerce</h3>
+          <p>Server-side rendered product pages, Stripe payments, fast image delivery and SEO optimizations.</p>
+          <a class="link" href="#" target="_blank">View Site →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Web3 Wallet Integration</h3>
+          <p>Smart contract interactions, MetaMask integration and on-chain event handling for dApps.</p>
+          <a class="link" href="#" target="_blank">Read Case →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>I'm available for full-time roles, contract projects, and freelance work. Send a message — I usually respond within 24–48 hours.</p>
+
+      <form id="contactForm" class="contact-form" onsubmit="return sendMail(event)">
+        <div class="row">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+        </div>
+        <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+        <div class="row">
+          <button class="btn primary" type="submit">Send Message</button>
+          <a class="btn outline" href="mailto:achchhelal@example.com">Email Me</a>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <div class="socials">
+        <a href="https://github.com/achchhelalMaddheshiya" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/achchhelal-maddheshiya-022a89148/" target="_blank"><img src="img/ln.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/achchhelal.maddheshiya" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/i_m_achchhe/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com/Achchhelal96" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Achchhelal Maddheshiya — Crafted with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
