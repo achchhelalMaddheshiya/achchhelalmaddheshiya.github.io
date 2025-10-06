@@ -1,208 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Achchhelal Maddheshiya | Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Achchhelal Maddheshiya - Software Engineer">
-  <link rel="canonical" href="https://achchhelalMaddheshiya.github.io/">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Achchhelal Maddheshiya — Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Achchhelal Maddheshiya — PHP, Laravel, React, Next.js, PostgreSQL, MySQL, JavaScript, CodeIgniter, Web3" />
+  <link rel="canonical" href="https://achchhelalmaddheshiya.github.io/" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    .site-header {
-      background: #fff;
-      border-bottom: 1px solid #eaeaea;
-      padding: 15px 0;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu {
-      list-style: none;
-    }
-
-    .nav-menu li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-
-    .nav-menu a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-menu a:hover {
-      color: #ff8050;
-    }
-
-    /* Profile Section */
-    .profile {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .profile img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #ff8050;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .profile h1 {
-      margin-top: 20px;
-      font-size: 2.5em;
-      font-weight: 600;
-    }
-
-    .profile h2 {
-      color: #ff8050;
-      font-weight: 400;
-      margin-bottom: 10px;
-    }
-
-    /* About Section */
-    .about {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px;
-      font-size: 1.1em;
-    }
-
-    /* Skills Section */
-    .skills {
-      background: #fff;
-      padding: 30px;
-      max-width: 900px;
-      margin: 40px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    }
-
-    .skills h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff8050;
-    }
-
-    .skills ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 0;
-    }
-
-    .skills li {
-      background: #f8f9fa;
-      padding: 12px;
-      border-radius: 8px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .skills li:hover {
-      transform: translateY(-5px);
-      background: #ff8050;
-      color: #fff;
-    }
-
-    /* Social Icons */
-    .footer-social {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .footer-social a img {
-      margin: 0 10px;
-      transition: transform 0.3s;
-    }
-
-    .footer-social a img:hover {
-      transform: scale(1.2);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      background: #fff;
-      border-top: 1px solid #eaeaea;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
   <header class="site-header">
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container nav-container">
+      <a class="brand" href="/">Achchhelal<span class="accent">.</span></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="hamburger" aria-label="menu">☰</button>
+    </div>
   </header>
 
-  <section class="profile">
-    <img src="img/achchhelal1.jpg" alt="Achchhelal Maddheshiya">
-    <h1>Achchhelal Maddheshiya</h1>
-    <h2>Full Stack Developer</h2>
-  </section>
-
-  <section class="about">
-    <p>I have completed my <b style="color:blueviolet;">B.Tech (CSE)</b> from <b>Lucknow</b> at 
-      <a href="https://bncet.ac.in" target="_blank">B N College of Engineering & Technology</a>.  
-      I specialize in <b>C</b>, <b>Core Java</b>, <b>Android</b>, and <b>PHP</b>.  
-      I’m passionate about building efficient, scalable web applications and constantly upgrading my skills.
-    </p>
-  </section>
-
-  <section class="skills" id="skills">
-    <h3>Technologies I Work With</h3>
-    <ul>
-      <li><a href="https://github.com/achchhelalMaddheshiya/Angular6" target="_blank">Angular 6</a></li>
-      <li><a href="https://github.com/achchhelalMaddheshiya/Laravel5.4" target="_blank">Laravel 5.4</a></li>
-      <li>WordPress</li>
-      <li>CodeIgniter</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <div class="footer-social">
-      <a href="https://github.com/achchhelalMaddheshiya"><img src="img/github.png" height="42" width="42"></a>
-      <a href="https://www.linkedin.com/in/achchhelal-maddheshiya-022a89148/"><img src="img/ln.png" height="42" width="42"></a>
-      <a href="https://www.facebook.com/achchhelal.maddheshiya"><img src="img/fb.png" height="42" width="42"></a>
-      <a href="https://www.instagram.com/i_m_achchhe/"><img src="img/instagram.png" height="42" width="42"></a>
-      <a href="https://twitter.com/Achchhelal96"><img src="img/twitter.png" height="42" width="42"></a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Achchhelal Maddheshiya | Crafted with ❤️
-  </footer>
-
-</body>
-
-</html>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="name">Achchhelal Maddheshiya</span></h1>
+          <p cla
