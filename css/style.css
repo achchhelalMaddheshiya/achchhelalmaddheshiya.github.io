@@ -52,7 +52,7 @@ body{
 .about h2{font-size:1.5rem;margin-bottom:10px;color:var(--accent)}
 
 /* skills */
-.skills{background:var(--card);padding:26px;border-radius:12px;margin:18px 0;box-shadow:0 10px 30px rgba(2,6,23,0.03)}
+.skills{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.03)}
 .skills h2{margin:0 0 12px;color:var(--accent)}
 .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 .skill{background:var(--bg);padding:12px;border-radius:8px;text-align:center;font-weight:600;transition:transform .18s,background .18s}
