@@ -39,3 +39,30 @@ function sendMail(e){
   status.textContent = 'Opening your email client...';
   return false;
 }
+
+// Animate elements on scroll (Intersection Observer)
+(function() {
+  const appearEls = document.querySelectorAll('.animate-fadein, .animate-pop');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    appearEls.forEach(el => {
+      // prep: set to invisible (if not already set in CSS)
+      if (!el.style.opacity) el.style.opacity = 0;
+      observer.observe(el);
+      // Start with animation paused:
+      el.style.animationPlayState = 'paused';
+    });
+  } else {
+    // fallback: show all instantly
+    appearEls.forEach(el => (el.style.opacity = 1));
+  }
+})();
